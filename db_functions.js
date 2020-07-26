@@ -1,12 +1,7 @@
 let crypto = require('crypto');
 const mysql = require('mysql');
+let secrets = require('dotenv').config();
 
-process.env.RDS_HOSTNAME = ""
-process.env.RDS_USERNAME = ""
-process.env.RDS_PASSWORD = ""
-process.env.RDS_PORT = ""
-process.env.SYSTEM_TYPE = ""
-process.env.DB_NAME = ""
 let con;
 
 /**
